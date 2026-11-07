@@ -90,11 +90,55 @@ main{padding-bottom:40px}
 .card.mini>b{width:44px;height:44px;min-width:44px;font-size:22px}
 .card.mini h3{font-size:17px}.card.mini small{font-size:13px}
 .foot{text-align:center;color:var(--mute);font-style:italic;margin-top:18px}
+
+/* ===== Design Stripe (défaut) ===== */
+html:not([data-th=it]){--bg:#fff;--card:#f8fafd;--ink:#061b31;--mute:#64748d;--ter:#533afd;--line:#d6dfeb;--ok:#15803d;--ko:#c2410c;--gold:#b9b9f9;--oli:#533afd;--verde:#533afd;--rosso:#533afd;--maio:#533afd;--disp:-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,sans-serif;--body:-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,sans-serif}
+@media(prefers-color-scheme:dark){html:not([data-th=it]){--bg:#0b0b14;--card:#14142a;--ink:#eef0ff;--mute:#a3b5d6;--line:#2a2a4a;--ter:#7662fd;--verde:#7662fd;--rosso:#7662fd;--maio:#7662fd;--oli:#7662fd;--ok:#4ade80;--ko:#fb923c}}
+html:not([data-th=it]) body{font-weight:300;background:var(--bg)}
+html:not([data-th=it]) h1,html:not([data-th=it]) h2,html:not([data-th=it]) h3,html:not([data-th=it]) h4,html:not([data-th=it]) .tx,html:not([data-th=it]) .card>b,html:not([data-th=it]) header b,html:not([data-th=it]) .w b{font-family:var(--disp);font-weight:300;font-style:normal;letter-spacing:-.02em}
+html:not([data-th=it]) h2{font-size:32px;letter-spacing:-.64px}
+html:not([data-th=it]) header{background:var(--bg);backdrop-filter:none;border-bottom:1px solid var(--line)}
+html:not([data-th=it]) header::after{display:none}
+html:not([data-th=it]) header b{font-size:20px;font-style:normal;font-weight:400}html:not([data-th=it]) header b span{color:var(--ter)}
+html:not([data-th=it]) button,html:not([data-th=it]) .btn{border-radius:4px;font-weight:400;box-shadow:none;min-height:40px}
+html:not([data-th=it]) button:active,html:not([data-th=it]) .btn:active{transform:none;opacity:.85}
+html:not([data-th=it]) .ghost{background:rgba(255,255,255,.65);color:var(--ter);border:1px solid #b9b9f9}
+@media(prefers-color-scheme:dark){html:not([data-th=it]) .ghost{background:transparent}}
+html:not([data-th=it]) .hero{border-radius:8px;box-shadow:none;background:radial-gradient(circle at 85% 0%,#7f7dfc,#f44bcc 38%,#e5edf5 78%);color:#061b31;padding:28px 24px}
+html:not([data-th=it]) .hero::before,html:not([data-th=it]) .hero::after{display:none}
+html:not([data-th=it]) .hero .gr{font:400 15px var(--body);opacity:.8}
+html:not([data-th=it]) .hero h1{font-size:44px;font-weight:300;letter-spacing:-1.4px}
+html:not([data-th=it]) .bar{background:rgba(255,255,255,.55);height:8px;border-radius:4px}html:not([data-th=it]) .bar i{background:#533afd;border-radius:4px}
+html:not([data-th=it]) .card{border:0;border-radius:6px;box-shadow:none;background:var(--card);border:1px solid var(--line)}
+html:not([data-th=it]) .card>b{border-radius:4px;border:0;font-weight:400;font-size:18px;width:48px;height:48px;min-width:48px}
+html:not([data-th=it]) .card h3{font-size:18px;font-weight:400}
+html:not([data-th=it]) .tabs button{border-radius:4px;font-weight:400;background:var(--card);color:var(--ink)}
+html:not([data-th=it]) .tabs button.on{background:var(--ter);color:#fff;box-shadow:none}
+html:not([data-th=it]) .box{border-radius:6px;box-shadow:none;background:var(--card)}
+html:not([data-th=it]) .box>h3{font-size:22px;border-bottom:1px solid var(--line)}
+html:not([data-th=it]) .tx{font-size:18px;line-height:1.6}
+html:not([data-th=it]) .w{border-radius:6px;box-shadow:none}html:not([data-th=it]) .w b{font-size:17px;font-weight:400}
+html:not([data-th=it]) .sp{background:#e2e4ff;color:var(--ter);border-radius:4px}
+html:not([data-th=it]) .o{border-radius:4px;font-weight:300;background:#fff;color:var(--ink);border:1px solid var(--line)}
+@media(prefers-color-scheme:dark){html:not([data-th=it]) .o{background:var(--card)}}
+html:not([data-th=it]) .o.ok{background:var(--ok);color:#fff}html:not([data-th=it]) .o.ko{background:var(--ko);color:#fff}
+html:not([data-th=it]) .chip{background:#e2e4ff;color:var(--ter);border-radius:4px;font-weight:400}
+html:not([data-th=it]) .chip:nth-child(4n+3),html:not([data-th=it]) .chip:nth-child(4n+5){background:#e2e4ff}
+html:not([data-th=it]) .mem{border-left:3px solid var(--ter);background:#eeefff;color:#061b31}
+html:not([data-th=it]) h3.sec{font-style:normal;font-weight:400;font-size:20px;color:var(--ink)}
+html:not([data-th=it]) h3.sec::after{height:1px;background:var(--line)}
+html:not([data-th=it]) h4{font-style:normal;color:var(--ter);font-weight:400}
+html:not([data-th=it]) table{border-radius:6px}html:not([data-th=it]) th{background:#e5edf5;color:#061b31;font-weight:400}
+html:not([data-th=it]) .res{border:1px solid #b9b9f9;border-radius:6px}
+html:not([data-th=it]) textarea,html:not([data-th=it]) input{border-radius:4px;border:1px solid #b9b9f9;background:var(--bg)}
+html:not([data-th=it]) .foot{font-style:normal}
+#th{min-height:40px;min-width:40px;padding:0 10px}
 </style>
 </head>
 <body>
-<header><button class="ghost" id="back" hidden aria-label="Retour">←</button><b>Italiano<span>.</span></b><button id="ins" hidden>Installer</button></header>
+<header><button class="ghost" id="back" hidden aria-label="Retour">←</button><b>Italiano<span>.</span></b><button class="ghost" id="th" aria-label="Changer de thème" title="Thème">🎨</button><button id="ins" hidden>Installer</button></header>
 <main id="app"></main>
+<script>try{if(localStorage.getItem("th")==="it")document.documentElement.dataset.th="it"}catch(e){}document.addEventListener("click",e=>{if(e.target.closest&&e.target.closest("#th")){const h=document.documentElement,it=h.dataset.th==="it";if(it)delete h.dataset.th;else h.dataset.th="it";try{localStorage.setItem("th",it?"stripe":"it")}catch(_){}}})</script>
 <script>
 var MORE=[
 {u:[
@@ -1180,7 +1224,9 @@ try{navigator.storage&&navigator.storage.persist&&navigator.storage.persist()}ca
 let P={d:{},t:{}};try{P=Object.assign(P,JSON.parse(localStorage.getItem("it")||"{}"))}catch(e){}
 P.tp=P.tp||{};
 const save=()=>{try{localStorage.setItem("it",JSON.stringify(P))}catch(e){}};
-const say=(t,r)=>{if(!window.speechSynthesis)return;speechSynthesis.cancel();const u=new SpeechSynthesisUtterance(t);u.lang="it-IT";u.rate=r||.9;speechSynthesis.speak(u)};
+let ITV=null;const pickV=()=>{const vs=(window.speechSynthesis&&speechSynthesis.getVoices())||[];const it=vs.filter(v=>/^it([-_]|$)/i.test(v.lang||""));if(!it.length){ITV=null;return}const pref=["Alice","Federica","Luca","Paola","Google italiano","Elsa","Isabella","Natural","Neural"];const sc=v=>{let n=0;pref.forEach((p,i)=>{if((v.name||"").includes(p))n=Math.max(n,20-i)});if(/it[-_]IT/i.test(v.lang))n+=5;if(v.localService===false)n+=1;return n};ITV=it.sort((a,b)=>sc(b)-sc(a))[0]};
+if(window.speechSynthesis){pickV();speechSynthesis.onvoiceschanged=pickV;setTimeout(pickV,500);setTimeout(pickV,2000)}
+const say=(t,r)=>{if(!window.speechSynthesis)return;if(!ITV)pickV();speechSynthesis.cancel();const u=new SpeechSynthesisUtterance(t);u.lang=ITV?ITV.lang.replace("_","-"):"it-IT";if(ITV)u.voice=ITV;u.rate=r||.9;speechSynthesis.speak(u);if(!ITV&&!window.__vh){window.__vh=1;setTimeout(()=>{pickV();if(!ITV)alert("Aucune voix italienne installée sur cet appareil. Réglages > Accessibilité > Contenu énoncé > Voix (iPhone) ou Réglages > Synthèse vocale (Android) : ajoute « Italien ».")},800)}};
 document.addEventListener("click",e=>{const b=e.target.closest("[data-s]");if(b)say(b.dataset.s,+b.dataset.r)});
 function quiz(el,qs,cb){
  qs=qs.map(q=>{const o=q[1].map((t,i)=>[t,i==q[2]]).sort(()=>Math.random()-.5);return[q[0],o.map(x=>x[0]),o.findIndex(x=>x[1])]});
@@ -1206,7 +1252,7 @@ const tally=l=>l.u.filter((_,i)=>P.d[l.id+"-"+i]).length;
 function home(){
  const tot=L.reduce((a,l)=>a+l.u.length,0),dn=L.reduce((a,l)=>a+tally(l),0);
  app.innerHTML=`<section class="hero"><div class="gr">${(()=>{const t=new Date().getHours();return t<5?"Buonanotte":t<13?"Buongiorno":t<18?"Buon pomeriggio":"Buonasera"})()} ✦</div><h1>Italiano</h1><p>De A1 à C2, étape par étape.</p><div class="bar"><i style="width:${100*dn/tot}%"></i></div><small>${dn}/${tot} unités terminées</small></section>`+
- L.map(l=>`<a class="card" href="#${l.id}" style="--c:${l.c}"><b>${l.id}</b><div><h3>${l.name}</h3><small>${tally(l)}/${l.u.length} unités · Test : ${P.tp[l.id]!=null?P.tp[l.id]+" %":"à passer"}</small></div></a>`).join("")+`<div class="duo"><a class="card mini" href="#res" style="--c:var(--gold)"><b>📚</b><div><h3>Ressources</h3><small>Écouter, lire, parler</small></div></a><a class="card mini" href="#save" style="--c:var(--oli)"><b>💾</b><div><h3>Sauvegarde</h3><small>${P.bk?"Le "+P.bk:"Exporter / restaurer"}</small></div></a></div><p style="text-align:center;color:var(--mute)"><small>Buono studio ! 🍋 · Version 34 · ${tot} unités · ${L.length} niveaux</small></p>`;
+ L.map(l=>`<a class="card" href="#${l.id}" style="--c:${l.c}"><b>${l.id}</b><div><h3>${l.name}</h3><small>${tally(l)}/${l.u.length} unités · Test : ${P.tp[l.id]!=null?P.tp[l.id]+" %":"à passer"}</small></div></a>`).join("")+`<div class="duo"><a class="card mini" href="#res" style="--c:var(--gold)"><b>📚</b><div><h3>Ressources</h3><small>Écouter, lire, parler</small></div></a><a class="card mini" href="#save" style="--c:var(--oli)"><b>💾</b><div><h3>Sauvegarde</h3><small>${P.bk?"Le "+P.bk:"Exporter / restaurer"}</small></div></a></div><p style="text-align:center;color:var(--mute)"><small>Buono studio ! 🍋 · Version 35 · ${tot} unités · ${L.length} niveaux</small></p>`;
  const hero=app.querySelector(".hero");
  if(P.last){const[a,b]=P.last.split("/"),l=L.find(x=>x.id==a),u=l&&l.u[+b];if(u)hero.insertAdjacentHTML("afterend",`<a class="card" href="#${P.last}" style="--c:${l.c}"><b>▶</b><div><h3>Reprendre</h3><small>${l.id} · ${u.t}</small></div></a>`)}
 }
